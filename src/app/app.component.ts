@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
 import { NgxSonnerToaster } from 'ngx-sonner';
-
+import { AuthStateService } from './shared/data-access/auth.state.service';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, NgxSonnerToaster],
@@ -9,5 +9,5 @@ import { NgxSonnerToaster } from 'ngx-sonner';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'repasoexamen';
+  
 }
